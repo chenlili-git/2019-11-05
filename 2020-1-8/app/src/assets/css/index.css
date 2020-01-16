@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 12px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+header{
+    color:white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+header span:first-child{
+    margin-right: 20px;
+}
+header span:last-child{
+   cursor: pointer;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 3px solid #46B34B;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+nav>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+    box-sizing: border-box;
+}
+nav>div img{
+    display: inline-block;
+}
+nav>ul{
+    flex:1;
+    display: flex;
+}
+nav>ul li{
+    width: 128px;
+    height: 100%;
+    text-align: center;
+}
+.active{
+    background-color: #46B34B;
+    color: white;
+}
+.contentBox{
+    display: flex;
+    height: 500px;
+}
+aside{
+    width: 215px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-left: 0px;
+    box-sizing: border-box;
+}
+.cntBox{
+    flex:1;
+    border: 1px solid gray;
+}
+/* 面包屑 */
+.bread{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid gray;
+    box-sizing:border-box;
+    color: #666;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.bread span::after{
+    content: '>';
+    margin:0 5px;
+    color:grey;
+}
+.bread span:last-child::after{
+    content: '';
+}
+#imgBox{
+    display: flex;  
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+#imgBox li{
+    display:flex;
+    align-items:center;
+    height: 100px;
+    border: 1px solid grey;
+    margin-right: 10px;
+}
+#imgBox li img{
+    display: block;
+}
+
+/* 修改密码 */
+.tip{
+    color:red;
+    line-height: 30px;
+    
+}
+.passwordBox{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+   
+}
+.pwCnt div{
+    height:50px;
+}
+.pwCnt input{
+    height: 30px;
+}
+.pwCnt span{
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+}
+.pwCnt button{
+    width: 100px;
+    background-color: blue;
+    height: 30px;
+    border: none;
+    outline: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pwCnt .btn{
+    padding-left: 60px;
+    text-align: center;
+    overflow: hidden;
+}
